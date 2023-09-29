@@ -1,0 +1,110 @@
+/** @format */
+
+body {
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'assistant';
+	background-color: rgb(255, 255, 255);
+	text-transform: capitalize;
+}
+
+.logo {
+	background-color: rgb(255, 247, 27);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 600;
+	font-size: 325%;
+	font-weight: bolder;
+	
+
+}
+
+.form {
+	display: grid;
+	text-align: center;
+	background-color: rgb(173, 148, 57);
+	justify-content: center;
+	gap: 10px;
+	padding: 20px;
+	border-color: transparent;
+	grid-template-areas: 'input input select select button button';
+}
+
+.form Button {
+	grid-area: 'button';
+	border: 0.5px solid black;
+	font-weight: 500;
+	border-radius: 12px;
+	cursor: pointer;
+	width: 100px;
+}
+
+input {
+	grid-area: 'input';
+	border: 0.5px solid black;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+select {
+	grid-area: 'select';
+	width: 100px;
+	border-radius: 20px;
+	border: 0.5px solid black;
+	cursor: pointer;
+}
+
+.list {
+	display: grid;
+	width: 100vw;
+	height: 70vh;
+	scroll-behavior: smooth;
+	
+}
+
+.list ul {
+	
+	display: grid;
+	overflow: hidden;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.2rem;
+	justify-content: center;
+	align-content: start;
+	list-style-type: none;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.list li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: large;
+	font-weight: 600;
+}
+
+input[type='checkbox'] {
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 10px;
+	accent-color: #2c2c2c;
+}
+.item button {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.footer {
+	background-color: rgb(154, 155, 156);
+	position: absolute;
+	bottom: -20px;
+	width: 100vw;
+	height: 10vh;
+	font-weight: 600;
+	font-size: xx-large;
+	text-align: center;
+}
